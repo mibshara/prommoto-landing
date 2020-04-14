@@ -324,42 +324,42 @@ header {
     left: -77px;
     width: 520px;
     height: 288px;
-    background-image: url(../img/for-drivers/c-earnings.png);
+    background-image: url(../img/for-drivers/c-earnings.svg);
 }
 .s-drivers .section-img-wrap span:last-child {
     bottom: -53px;
     right: -104px;
     width: 378px;
     height: 345px;
-    background-image: url(../img/for-drivers/earned.png);
+    background-image: url(../img/for-drivers/earned.svg);
 }
 .s-brands .section-img-wrap span:first-child {
     top: -8px;
     right: -83px;
     width: 419px;
     height: 174px;
-    background-image: url(../img/for-brands/total-reach.png);
+    background-image: url(../img/for-brands/total-reach.svg);
 }
 .s-brands .section-img-wrap span:last-child {
     bottom: 0;
     left: -104px;
     width: 417px;
     height: 379px;
-    background-image: url(../img/for-brands/c-reach.png);
+    background-image: url(../img/for-brands/c-reach.svg);
 }
 .s-companies .section-img-wrap span:first-child {
     top: -70px;
     left: -5px;
     width: 274px;
     height: 200px;
-    background-image: url(../img/for-companies/toolp.png);
+    background-image: url(../img/for-companies/toolp.svg);
 }
 .s-companies .section-img-wrap span:last-child {
     bottom: 0;
     right: -75px;
     width: 416px;
     height: 416px;
-    background-image: url(../img/for-companies/average.png);
+    background-image: url(../img/for-companies/average.svg);
 }
 
 /* section-content */
@@ -626,7 +626,7 @@ footer .navbar-brand img {
     h2 {
         font-size: 60px;
     }
-    
+
     h4 {
         font-size: 20px;
     }
@@ -814,6 +814,5 @@ footer .navbar-brand img {
     .container {
         margin: 0 25px;
     }
-    
-}
 
+}
