@@ -199,7 +199,6 @@ header {
 /* top-section */
 .top-section {
     position: relative;
-    /* overflow: hidden; */
     height: 85vh;
     min-height: 778px;
 }
@@ -208,7 +207,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 55vw;
+    min-height: 100%;
+    max-height: 1056px;
     background-image: url(../img/top-section-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -228,9 +229,9 @@ header {
 .video-wrap {
     position: absolute;
     top: 0px;
-    right: -9vw;
-    width: 60.9vw;
-    height: 74vw;
+    right: -4vw;
+    width: 42.6vw;
+    height: 52.5vw;
     max-width: 878px;
     max-height: 1065px;
     background-image: url(../videos/Prommoto-Video.gif);
@@ -261,9 +262,9 @@ header {
     line-height: 1;
     font-size: 17px;
     width: 100%;
-    -webkit-box-shadow: 0px 0px 40px -26px rgba(0,0,0,0.75);;
-    -moz-box-shadow: 0px 0px 40px -26px rgba(0,0,0,0.75);;
-    box-shadow: 0px 0px 40px -26px rgba(0,0,0,0.75);;
+    -webkit-box-shadow: 0px 0px 40px -26px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 40px -26px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 40px -26px rgba(0,0,0,0.75);
 }
 .form-register button {
     border-radius: 28px;
@@ -280,7 +281,7 @@ header {
     right: 0;
 }
 .s-brands-link {
-    margin: 60px 0 120px;
+    margin: 15px 0 120px;
     z-index: 2;
 }
 .top-section,
@@ -319,10 +320,10 @@ header {
     z-index: 1;
 }
 .s-drivers .section-img-wrap span:first-child {
-    top: 42px;
-    left: -106px;
-    width: 414px;
-    height: 218px;
+    top: 16px;
+    left: -77px;
+    width: 520px;
+    height: 288px;
     background-image: url(../img/for-drivers/c-earnings.png);
 }
 .s-drivers .section-img-wrap span:last-child {
@@ -403,6 +404,9 @@ section .form-register input {
     padding: 16px 60px 16px 21px;
     font-size: 14px;
     width: 77%;
+    -webkit-box-shadow: 0px 0px 40px -22px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 40px -22px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 40px -22px rgba(0,0,0,0.75);
 }
 .section-img-wrap img {
     width: 100%;
@@ -594,7 +598,7 @@ footer .navbar-brand img {
         font-size: 100px;
     }
     .video-wrap {
-        right: -8vw;
+        right: -2vw;
     }
 }
 @media (max-width : 991px) {
