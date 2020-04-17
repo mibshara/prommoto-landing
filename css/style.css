@@ -297,6 +297,64 @@ header {
     margin-right: 70px;
 }
 
+/* submit form */
+.form-register, 
+.form-register input  {
+    transition: all 0.4s ease-in-out;
+}
+.form-register .btn-form-wrap  {
+    transition: all 0.3s ease-in-out;
+}
+.success-content {
+    transition: all 0.4s ease-in-out;
+    transition-delay: .3s;
+}
+.form-register.success input,
+.form-register.success .btn-form-wrap {
+    opacity: 0;
+}
+.form-register.success .btn-form-wrap {
+    transform: translateX(-100%);
+}
+.form-register.success input {
+    width: 0%;
+}
+.success-content {
+    transform: translateX(10%);
+    opacity: 0;
+}
+.form-register.success .success-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0);
+    opacity: 1;
+}
+.form-register .success-content::before{
+    content: '\2713';
+    display: inline-block;
+    color: green;
+    font-size: 30px;
+    margin-right: 10px;
+    line-height: 30px;
+}
+.form-register.success .success-content::after {
+    content: 'Thanks for joining our waitlist, we will let you know when we are about to launch';
+    display: inline-block;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.block-btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 /* form */
 .s-drivers .btn-form-wrap button {
     background-color: #98dede;
@@ -607,34 +665,34 @@ footer .navbar-brand img {
         padding: 0;
     }
     section {
-        padding: 35px 0;
+        padding: 65px 0;
     }
     .top-section-fon {
         left: auto;
         right: 0;
         width: 159px;
-        height: 317px;
+        height: 238px;
         background-image: url(../img/top-section-mobile-bg.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: top right;
     }
     h1 {
-        font-size: 23px;
+        font-size: 28px;
         line-height: 1.18;
     }
     h2 {
         font-size: 60px;
     }
-
+    
     h4 {
         font-size: 20px;
     }
     p {
-        font-size: 9px;
+        font-size: 14px;
     }
     .top-section-left {
-        max-width: 195px;
+        max-width: 230px;
     }
     .navbar {
         padding: 25px 25px;
@@ -653,16 +711,21 @@ footer .navbar-brand img {
     }
     .top-section .form-register {
         max-width: 100%;
-        margin-top: 115px;
+        margin-top: 20px;
     }
-    .form-register input {
-        padding: 9.5px 16px;
+    .form-register input,
+    section .form-register input {
+        padding: 16px 52px 16px 16px;
         font-size: 9px;
-        width: 86%;
+        width: 80%;
     }
     .form-register button {
         font-size: 10px;
-        padding: 8px 20px;
+        padding: 14.5px 28px;
+    }
+    section .form-register button {
+        font-size: 10px;
+        padding: 16px 28px;
     }
     .video-wrap {
         background-image: none;
@@ -690,40 +753,41 @@ footer .navbar-brand img {
         background-image: none !important;
     }
     .s-brands-link {
+        margin: 50px 0 30px;
         padding: 0;
-    }
-    .s-brands-link {
-        margin: 20px 0 30px;
     }
     .section-info {
         width: 100%;
-        max-width: 276px;
+        max-width: 100%;
         margin: 0 auto;
     }
     .section-subtitle {
-        font-size: 9px;
+        font-size: 16px;
     }
     .section-title {
-        margin: -6px 0 10px;
+        margin: 0 0 10px;
     }
     section .form-register {
         margin: 30px 0 0;
         max-width: 100%;
     }
-    section .form-register input {
-        padding: 8px 28px 8px 13px;
-        font-size: 7px;
-        width: 90%;
+    .s-getting-paid .form-register input {
+        -webkit-box-shadow: -7px 1px 30px -17px rgba(0,0,0,0.75);
+        -moz-box-shadow: -7px 1px 30px -17px rgba(0,0,0,0.75);
+        box-shadow: -7px 1px 30px -17px rgba(0,0,0,0.75);
+        width: 71%;
     }
-    section .form-register button {
-        font-size: 8px;
-        padding: 7.5px 16px;
+    .getting-paid-info .form-register {
+        margin-top: 15px;
+        width: 108%;
+        max-width: 115%;
+        left: -8px;
     }
     .s-brands {
         margin: 0;
     }
     .s-companies .section-title {
-        margin: -6px 0 30px;
+        margin: 0 0 10px;
     }
     .s-drivers-brands {
         display: none;
@@ -731,11 +795,12 @@ footer .navbar-brand img {
     .getting-paid-info {
         max-width: 260px;
         margin: 85px auto;
-        padding: 20px 30px 35px;
+        padding: 18px 20px 18px;
         border-radius: 16.8px;
     }
     .getting-paid-title {
-        margin: 5px 0 18px;
+        margin: 5px 0 6px;
+        line-height: 1.2;
     }
     footer .navbar-brand {
         width: 71px;
@@ -752,10 +817,18 @@ footer .navbar-brand img {
     .footer-logo-wrap p {
         margin: 13px 0 15px;
         max-width: 120px;
+        font-size: 10px;
     }
     .copy {
         font-size: 6px;
-        margin: 15px 0 20px;
+        margin: 15px 0 30px;
+    }
+    .form-register.success .success-content::after {
+        line-height: 1.3;
+        font-size: 12px;
+    }
+    .form-register .success-content::before {
+        font-size: 22px;
     }
 }
 @media (max-width : 767px) {
@@ -764,7 +837,10 @@ footer .navbar-brand img {
     }
     .section-img-wrap {
         max-width: 100%;
-        margin-bottom: 64px;
+        margin-bottom: 15px;
+    }
+    .section-img-wrap img {
+        max-width: 116px;
     }
     .getting-paid-img-wrap {
         position: absolute;
@@ -814,5 +890,5 @@ footer .navbar-brand img {
     .container {
         margin: 0 25px;
     }
-
+    
 }
