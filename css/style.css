@@ -331,7 +331,7 @@ header {
     transform: translateX(0);
     opacity: 1;
 }
-.form-register .success-content::before{
+.form-register.success .success-content::before{
     content: '\2713';
     display: inline-block;
     color: green;
@@ -586,8 +586,6 @@ section .form-register input {
 .getting-paid-info .form-register {
     margin-top: 45px;
 }
-
-
 
 /* footer */
 footer {

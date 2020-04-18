@@ -7,7 +7,7 @@
 	<meta name="description" content="Page description">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="./css/style.css?v2">
+	<link rel="stylesheet" href="./css/style.css?v3">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
 				</div>
 
 				<div class="form-register-wrap" data-aos="fade-left">
-					<form class="form-register general-form">
+					<form class="form-register landing-form" data-name-form="landing-form">
 						<input type="email" name="email" placeholder="Enter Email Address" required>
 						<div class="btn-form-wrap">
 							<button>Join Waitlist</button>
@@ -82,7 +82,7 @@
 					<p>We create connections between the physical and digital worlds through innovative OOH advertising aimed at
 						providing you an easy way to make extra money, by simply doing what you’re already doing.</p>
 					<div class="form-register-wrap">
-						<form class="form-register drivers-form">
+						<form class="form-register drivers-form" data-name-form="drivers-form">
 							<input type="email" name="email" placeholder="Enter Email Address" required>
 							<div class="btn-form-wrap">
 								<button>Join Waitlist</button>
@@ -113,7 +113,7 @@
 						unforgettable experiences. Allowing access for brands into high traffic areas and demographically specific
 						targetting.</p>
 					<div class="form-register-wrap">
-						<form class="form-register brands-form">
+						<form class="form-register brands-form" data-name-form="brands-form">
 							<input type="email" name="email" placeholder="Enter Email Address" required>
 							<div class="btn-form-wrap">
 								<button>Join Waitlist</button>
@@ -143,7 +143,7 @@
 					<p>Diversify your market reach and client base through utilizing Prommoto to generate extra clientele. Making
 						you extra revenue for doing what you’re already doing.</p>
 					<div class="form-register-wrap">
-						<form class="form-register companies-form">
+						<form class="form-register wrap-companies-form" data-name-form="wrap-companies-form">
 							<input type="email" name="email" placeholder="Enter Email Address" required>
 							<div class="btn-form-wrap">
 								<button>Join Waitlist</button>
@@ -191,7 +191,7 @@
 						<p>Join our waitlist and become one of the first to make fast and easy extra money through OOH advertising.
 						</p>
 						<div class="form-register-wrap">
-							<form class="form-register general-form">
+							<form class="form-register footer-form" data-name-form="footer-form">
 								<input type="email" name="email" placeholder="Enter Email Address" required>
 								<div class="btn-form-wrap">
 									<button>Join Waitlist</button>
@@ -259,23 +259,19 @@
 	</footer>
 
 	<script src="./js/libs.js"></script>
-	<script src="./js/script.js"></script>
+	<script src="./js/script.js?v1"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163679202-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
 		gtag('js', new Date());
 		gtag('config', 'UA-163679202-1');
 	</script>
-
-	<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-	<script type="text/javascript">
-		(function(){
-				emailjs.init("user_kX6MN15KXFyOKgnkIQJSG");
-		})();
-	</script> -->
 
 </body>
 
