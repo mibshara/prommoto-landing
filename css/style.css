@@ -419,6 +419,9 @@ header {
     height: 416px;
     background-image: url(../img/for-companies/average.svg);
 }
+.companies-mobile {
+    display: none;
+}
 
 /* section-content */
 .section-content {
@@ -586,6 +589,8 @@ section .form-register input {
 .getting-paid-info .form-register {
     margin-top: 45px;
 }
+
+
 
 /* footer */
 footer {
@@ -882,6 +887,12 @@ footer .navbar-brand img {
         margin: 0 auto;
         width: 281px;
         position: relative;
+    }
+    .companies-mobile {
+        display: block;
+    }
+    .companies-desktop {
+        display: none;
     }
 }
 @media (max-width : 480px) {
