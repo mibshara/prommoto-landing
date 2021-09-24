@@ -84,9 +84,11 @@ const Navbar = () => {
             </a>
           </div>
           <div className={buttonClass}>
-            <button>
-              <span>Get Early Access</span>
-            </button>
+            <a href="mailto:info@prommoto.com">
+              <button>
+                <span>Get Early Access</span>
+              </button>
+            </a>
           </div>
         </div>
       </div>

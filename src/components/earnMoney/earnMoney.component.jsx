@@ -166,7 +166,9 @@ const EarnMoney = ({
                 }`,
               }}
             />
-            <button>Get early access</button>
+            <a href="mailto:info@prommoto.com">
+              <button>Get early access</button>
+            </a>
           </div>
         </React.Fragment>
       ) : (
@@ -201,18 +203,20 @@ const EarnMoney = ({
               </div>
               <div className={getEarlyAccess}>
                 {slide3Active ? (
-                  <CustomButton
-                    mainBgColor={mainColor}
-                    subBgColor={subBgColor}
-                    mainTextColor={mainTextColor}
-                    subTextColor={subTextColor}
-                    // style={{
-                    //   backgroundColor: `${mainColor}`,
-                    //   color: subColor,
-                    // }}
-                  >
-                    <span> Get Early Access</span>
-                  </CustomButton>
+                  <a href="mailto:info@prommoto.com">
+                    <CustomButton
+                      mainBgColor={mainColor}
+                      subBgColor={subBgColor}
+                      mainTextColor={mainTextColor}
+                      subTextColor={subTextColor}
+                      // style={{
+                      //   backgroundColor: `${mainColor}`,
+                      //   color: subColor,
+                      // }}
+                    >
+                      <span> Get Early Access</span>
+                    </CustomButton>
+                  </a>
                 ) : (
                   <span className={spanCls}>Join early users list</span>
                 )}

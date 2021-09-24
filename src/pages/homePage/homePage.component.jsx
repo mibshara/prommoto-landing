@@ -19,7 +19,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <PartnersLogos />
+      {/* <PartnersLogos /> */}
       <BrandsIndividuals />
       <EarnMoney
         key={0}

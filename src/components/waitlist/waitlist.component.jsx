@@ -16,10 +16,11 @@ const Waitlist = () => {
           <span>A limited time offer</span> for the first 1000 brands: <br />{" "}
           Join the early adopter email list to be fostered.
         </p>
-        <button>
-          {" "}
-          <span>Get Early Access</span>
-        </button>
+        <a href="mailto:info@prommoto.com">
+          <button>
+            <span>Get Early Access</span>
+          </button>
+        </a>
       </div>
       <img src={bgImg} alt="back" />
     </section>
