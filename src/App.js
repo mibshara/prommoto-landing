@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Navbar from "components/navbar/navbar.component";
@@ -13,11 +13,27 @@ function App() {
     window.scrollTo(0, 0);
   };
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleModalMenu = () => {
+    console.log(isModalOpen);
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <>
-      <Navbar />
+      <Navbar handleModal={handleModalMenu} />
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route
+          exact
+          path="/"
+          component={() => (
+            <HomePage
+              isModalOpen={isModalOpen}
+              handleModalMenu={handleModalMenu}
+            />
+          )}
+        />
         <Route
           path="/terms-and-conditions"
           component={TermsAndConditionsPage}

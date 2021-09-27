@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import prommotoLogo from "assets/prommotoLogo.svg";
 import fbLink from "assets/fbLink.svg";
 import instLink from "assets/instLink.svg";
-import twitterLink from "assets/twitterLink.svg";
+import linkedInLink from "assets/linkedin.svg";
 
 import {
   navbarLinksBtnContainer,
@@ -25,7 +25,7 @@ import {
   navbarLinksClosed,
 } from "./navbar.module.scss";
 
-const Navbar = () => {
+const Navbar = ({ handleModal }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <nav>
@@ -73,22 +73,32 @@ const Navbar = () => {
         </div>
         <div className={navbarSocialLinksBtnContainer}>
           <div className={navbarSocialLinks}>
-            <a href="#1">
+            <a
+              href="https://www.facebook.com/Prommoto-111269120540732"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={fbLink} alt="facebook link" />
             </a>
-            <a href="#1">
+            <a
+              href="https://www.instagram.com/prommotobrands/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={instLink} alt="instagram link" />
             </a>
-            <a href="#1">
-              <img src={twitterLink} alt="twitter link" />
+            <a
+              href="https://www.linkedin.com/company/prommoto"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={linkedInLink} alt="twitter link" width="20" />
             </a>
           </div>
-          <div className={buttonClass}>
-            <a href="mailto:info@prommoto.com">
-              <button>
-                <span>Get Early Access</span>
-              </button>
-            </a>
+          <div className={buttonClass} onClick={handleModal}>
+            <button>
+              <span>Get Early Access</span>
+            </button>
           </div>
         </div>
       </div>

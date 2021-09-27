@@ -54,7 +54,7 @@ const Footer = () => {
           <div className={contactDiv}>
             <h4>Contact Us</h4>
             <div>
-              <p>hello@prommoto.com</p>
+              <a href="mailto:hello@prommoto.com">hello@prommoto.com</a>
               {/* <p>+218928607817</p> */}
             </div>
           </div>

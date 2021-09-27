@@ -46,6 +46,7 @@ const EarnMoney = ({
   firstStepId,
   secondStepId,
   thirdStepId,
+  handleModal,
 }) => {
   const [scrollProgress, setScrollProgress] = useState("33%");
   const [slide1Active, setSlide1Active] = useState(true);
@@ -166,9 +167,8 @@ const EarnMoney = ({
                 }`,
               }}
             />
-            <a href="mailto:info@prommoto.com">
-              <button>Get early access</button>
-            </a>
+
+            <button onClick={handleModal}>Get early access</button>
           </div>
         </React.Fragment>
       ) : (
@@ -203,20 +203,19 @@ const EarnMoney = ({
               </div>
               <div className={getEarlyAccess}>
                 {slide3Active ? (
-                  <a href="mailto:info@prommoto.com">
-                    <CustomButton
-                      mainBgColor={mainColor}
-                      subBgColor={subBgColor}
-                      mainTextColor={mainTextColor}
-                      subTextColor={subTextColor}
-                      // style={{
-                      //   backgroundColor: `${mainColor}`,
-                      //   color: subColor,
-                      // }}
-                    >
-                      <span> Get Early Access</span>
-                    </CustomButton>
-                  </a>
+                  <CustomButton
+                    onClick={handleModal}
+                    mainBgColor={mainColor}
+                    subBgColor={subBgColor}
+                    mainTextColor={mainTextColor}
+                    subTextColor={subTextColor}
+                    // style={{
+                    //   backgroundColor: `${mainColor}`,
+                    //   color: subColor,
+                    // }}
+                  >
+                    <span> Get Early Access</span>
+                  </CustomButton>
                 ) : (
                   <span className={spanCls}>Join early users list</span>
                 )}

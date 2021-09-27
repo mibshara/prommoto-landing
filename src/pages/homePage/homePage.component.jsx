@@ -1,12 +1,13 @@
 import React from "react";
 
 import Header from "components/header/header.component";
-import PartnersLogos from "components/partnersLogos/partnersLogos.component";
+// import PartnersLogos from "components/partnersLogos/partnersLogos.component";
 import BrandsIndividuals from "components/brandsIndividuals/brandsIndividuals.component";
 import EarnMoney from "components/earnMoney/earnMoney.component";
 import Promote from "components/promote/promote.component";
 import Waitlist from "components/waitlist/waitlist.component";
 import GetInTouch from "components/getInTouch/getInTouch.component";
+import FormModal from "components/formModal/formModal.component";
 
 import earnGrow3 from "assets/growSlide3.png";
 import earnMoney1 from "assets/earnMoney1.svg";
@@ -15,13 +16,15 @@ import earnMoney3 from "assets/earnMoney3.png";
 import earnGrow1 from "assets/growSlide1.svg";
 import earnGrow2 from "assets/growSlide2.png";
 
-const HomePage = () => {
+const HomePage = ({ handleModalMenu, isModalOpen }) => {
   return (
     <>
+      {isModalOpen && <FormModal closeClick={handleModalMenu} />}
       <Header />
       {/* <PartnersLogos /> */}
       <BrandsIndividuals />
       <EarnMoney
+        handleModal={handleModalMenu}
         key={0}
         headerText="Earn Money"
         subHeaderText="For Driving."
@@ -51,7 +54,7 @@ const HomePage = () => {
         // subColor="#fff"
       />
       <Promote />
-      <Waitlist />
+      <Waitlist handleModal={handleModalMenu} />
       <EarnMoney
         key={1}
         headerText="Earn & Grow"
@@ -76,6 +79,7 @@ const HomePage = () => {
         firstStepId={"growFirstStep"}
         secondStepId={"growSecondStep"}
         thirdStepId={"thirdStep"}
+        handleModal={handleModalMenu}
       />
       <GetInTouch />
     </>

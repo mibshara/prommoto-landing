@@ -48,7 +48,7 @@ const GetInTouch = () => {
           {!isTablet && <span>For Investors</span>}
           <h2>Be Part of Prommoto</h2>
           {isTablet && <span>For Investors</span>}
-          <p>
+          <p style={{ opacity: "80%" }}>
             Become a part of an exciting and innovative company and take OOH
             advertising to the next level.
           </p>

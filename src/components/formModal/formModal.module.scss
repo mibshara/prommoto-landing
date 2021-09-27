@@ -1,0 +1,100 @@
+@import "../../lib/colors";
+
+.formContainer {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba($color: #000000, $alpha: 0.2);
+  top: 0;
+  left: 0;
+  z-index: 99999;
+
+  .formWrapper {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+
+    .closeButton {
+      height: 24.54px;
+      width: 30.67px;
+      position: absolute;
+      right: 30px;
+      top: 35px;
+      z-index: 99999;
+      cursor: pointer;
+
+      .upperCloseSpan {
+        background-color: $blue-ribbon-color;
+        height: 4px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(45deg);
+      }
+
+      .bottomCloseSpan {
+        background-color: $blue-ribbon-color;
+        height: 4px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(-45deg);
+      }
+    }
+
+    iframe {
+      height: 90%;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 25px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .formContainer {
+    .formWrapper {
+      width: 90%;
+
+      .closeButton {
+        right: 70px;
+        top: 70px;
+      }
+
+      iframe {
+        width: 85%;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .formContainer {
+    .formWrapper {
+      width: 100%;
+
+      .closeButton {
+        right: 10px;
+      }
+
+      iframe {
+        width: 85%;
+      }
+    }
+  }
+}
