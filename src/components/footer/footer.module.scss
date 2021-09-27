@@ -85,6 +85,7 @@
     align-items: center;
 
     .logoDiv {
+      height: 50%;
       p {
         font-weight: normal;
         font-size: 16px;
@@ -102,8 +103,7 @@
       justify-content: space-between;
       align-items: center;
       width: 40%;
-      height: 80%;
-      align-self: baseline;
+      height: 50%;
 
       .contactDiv {
         display: flex;

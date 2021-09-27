@@ -80,7 +80,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={linkedin} alt="" height="26" width="26" />
+                <img src={linkedin} alt="" height="24" width="24" />
               </a>
             </div>
           </div>
