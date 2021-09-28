@@ -14,12 +14,12 @@ export const CustomButton = styled.button`
   & {
     overflow: hidden;
     color: ${(props) => props.mainTextColor};
-    background-color: ${(props) => props.subBgColor};
+    background-color: #000;
     -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 
     &:hover {
-      color: ${(props) => props.subTextColor};
-      background-color: ${(props) => props.subBgColor};
+      color: #fff;
+      background-color: #000;
     }
 
     &::before {

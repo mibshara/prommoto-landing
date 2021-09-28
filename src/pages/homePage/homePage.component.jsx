@@ -26,17 +26,17 @@ const HomePage = ({ handleModalMenu, isModalOpen }) => {
       <EarnMoney
         handleModal={handleModalMenu}
         key={0}
-        headerText="Earn Money"
-        subHeaderText="For Driving."
+        headerText="Earn money"
+        subHeaderText="for driving."
         slide1MainText="Make money"
         slide1MainSubText={[
           "State of the art way to make extra money. Simply by driving you can make up to ",
-          <span>400$</span>,
+          <span>$400</span>,
           " per campaign for doing what you already do",
         ]}
         slide1Img={earnMoney1}
-        slide2MainText="Set your own scheldule"
-        slide2MainSubText="Go about your dailly life and make money for doing what you already do."
+        slide2MainText="Set your own schedule"
+        slide2MainSubText="Go about your daily life and make money for doing what you already do."
         slide2Img={earnMoney2}
         slide3MainText="Let the app lead the way"
         slide3MainSubText="Cruise around and let the app lead the way to make you the most money."
@@ -58,8 +58,8 @@ const HomePage = ({ handleModalMenu, isModalOpen }) => {
       <EarnMoney
         key={1}
         headerText="Earn & Grow"
-        subHeaderText="For Installers."
-        slide1MainText="Grow Your Market"
+        subHeaderText="for Installers."
+        slide1MainText="Grow your market"
         slide1MainSubText="Diversify your market reach and client base through utilizing Prommoto to generate extra clientele. Making you extra revenue for doing what you’re already doing."
         slide1Img={earnGrow1}
         slide2MainText="Plenty of orders"
@@ -69,7 +69,7 @@ const HomePage = ({ handleModalMenu, isModalOpen }) => {
         slide3MainSubText="Wrap for Prommoto on your schedule. You can focus on what you do best while seamlessly managing new wraps and removals through our intuitive integrative scheduling & management platform."
         slide3Img={earnGrow3}
         mainColor="#FFE100"
-        subColor="#0043EA"
+        subColor="#FFE100"
         subBgColor={"#F6555A"}
         mainTextColor="#0043ea"
         subTextColor="#fff"

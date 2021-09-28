@@ -3,6 +3,7 @@
 .joinWaitListSection {
   position: relative;
   margin-top: 364px;
+  max-height: 80vh;
 
   .joinWaitListTextDiv {
     text-align: center;
@@ -47,12 +48,12 @@
       & {
         overflow: hidden;
         color: #fff;
-        background-color: $blue-ribbon-color;
+        background-color: #000;
         -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 
         &:hover {
           // color: $sandy-brown-color;
-          background-color: $blue-ribbon-color;
+          background-color: #000;
         }
 
         &::before {

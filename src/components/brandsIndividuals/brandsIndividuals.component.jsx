@@ -20,8 +20,8 @@ const BrandsIndividuals = () => {
         <h2>Empowering brands and individuals.</h2>
         <p>
           Prommoto bridges the gap between the physical and digital worlds
-          through innovative OOH advertising aimed at providing users an easy
-          way to make extra money, by simply doing what they’re already doing.
+          through innovative OOH advertising. Providing users an easy way to
+          make extra money, by simply doing what they already do.
         </p>
       </div>
       <img src={`${isMob ? graphPicMob : graphPic}`} alt="graph" />

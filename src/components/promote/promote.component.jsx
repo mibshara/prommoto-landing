@@ -25,7 +25,7 @@ const Promote = () => {
     <section className={promoteSection} id="brands">
       <div className={headerText}>
         <h2>Promote</h2>
-        <p>Your brand</p>
+        <p>your brand.</p>
       </div>
       <div className={textDivImg}>
         {isTablet ? (
@@ -50,7 +50,7 @@ const Promote = () => {
             </div>
             <div className={textDiv}>
               <span>Grow &</span>
-              <h3>Reach your target where they are.</h3>
+              <h3>reach your target where they are.</h3>
               <p>
                 Welcome to a new era of physical advertising. Have full control
                 of your physical campaigns through our smart dashboard and rich
@@ -64,7 +64,7 @@ const Promote = () => {
       <div className={textDivImg}>
         <div className={textDiv}>
           {!isTablet && <span>Grow &</span>}
-          <h3>Measured Impact</h3>
+          <h3>measured Impact</h3>
           <p>
             Easily measure your impact through integrative impression data
             analysis produced by our innovative tracking technology.
